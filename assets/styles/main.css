@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+*,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-style: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 2rem;
+}
+
+.wrapper {
+  max-width: 1080px;
+}
+
+.header {
+  text-align: center;
+  border-top: 3px solid #f6bd60;
+  padding: 1.5rem 0;
+  margin-bottom: 0;
+}
+
+.header img {
+  width: 10rem;
+}
+
+.section-one {
+  background: url("../images/bg-gold.png");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 0 3rem 0;
+}
+
+.section-one h1,
+.section-one p {
+  text-align: center;
+}
+
+.section-one p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  margin-top: 0.25rem;
+}
+
+.section-one .section-one-content {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  justify-items: center;
+}
+
+.section-one .section-one-content div {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section-one .section-one-content iframe {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.section-one ul {
+  list-style-type: none;
+}
+
+.section-one ul li {
+  padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-one ul li:before {
+  content: '';
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  background-image: url("../images/bullet.png");
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+}
+
+.section-one button {
+  color: #ffffff;
+  font-size: 1.25rem;
+  width: 100%;
+  padding: 1rem 4rem;
+  background: #17bebb;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=main.css.map */
