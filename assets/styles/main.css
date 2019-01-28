@@ -21,6 +21,7 @@ h4 {
 
 .wrapper {
   max-width: 1080px;
+  margin: 0 auto;
 }
 
 button {
@@ -236,5 +237,49 @@ li:before {
 
 .mini-header-two p {
   margin: 0 auto;
+}
+
+.sec-four {
+  background: url("../images/bg-dots.png");
+  background-size: cover;
+  padding: 4rem 0;
+}
+
+.sec-four h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sec-four img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.sec-four-points {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  margin-top: 3rem;
+}
+
+.sec-four-points .point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec-four-points .point img {
+  margin-right: 0.75rem;
+}
+
+.sec-four-points .point-title {
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

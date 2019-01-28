@@ -47,6 +47,7 @@ h4 {
 
 .wrapper {
 	max-width: 1080px;
+	margin: 0 auto;
 }
 
 button {
@@ -94,3 +95,4 @@ li:before {
 @import 'partials/_section-one';
 @import 'partials/_section-two';
 @import 'partials/_section-three';
+@import 'partials/_section-four';

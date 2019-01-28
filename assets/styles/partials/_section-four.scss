@@ -1,0 +1,30 @@
+.sec-four {
+	background: url('../images/bg-dots.png');
+	background-size: cover;
+	padding: 4rem 0;
+	h2 {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	img {
+		display: flex;
+		margin: auto;
+	}
+}
+
+.sec-four-points {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 3rem;
+	margin-top: 3rem;
+	.point {
+		display: flex;
+		align-items: center;
+		img {
+			margin-right: 0.75rem;
+		}
+	}
+	.point-title {
+		font-weight: $bold;
+	}
+}
