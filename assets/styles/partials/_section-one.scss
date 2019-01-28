@@ -18,12 +18,23 @@
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 3rem;
 		justify-items: center;
+		@media only screen and (max-width: 825px) {
+			grid-template-columns: 1fr;
+			justify-items: center;
+		}
 		div {
 			justify-self: start;
 			align-self: center;
+			@media only screen and (max-width: 825px) {
+				justify-self: center;
+			}
 		}
 		iframe {
 			justify-self: end;
+			@media only screen and (max-width: 825px) {
+				justify-self: center;
+				width: 80%;
+			}
 		}
 	}
 }

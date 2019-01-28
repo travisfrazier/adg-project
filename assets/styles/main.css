@@ -19,9 +19,20 @@ h4 {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 825px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 1.7rem;
+  }
+}
+
 .wrapper {
   max-width: 1080px;
   margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 button {
@@ -97,6 +108,14 @@ li:before {
   justify-items: center;
 }
 
+@media only screen and (max-width: 825px) {
+  .sec-one .sec-one-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
 .sec-one .sec-one-content div {
   -ms-grid-column-align: start;
       justify-self: start;
@@ -105,9 +124,24 @@ li:before {
       align-self: center;
 }
 
+@media only screen and (max-width: 825px) {
+  .sec-one .sec-one-content div {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
 .sec-one .sec-one-content iframe {
   -ms-grid-column-align: end;
       justify-self: end;
+}
+
+@media only screen and (max-width: 825px) {
+  .sec-one .sec-one-content iframe {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 80%;
+  }
 }
 
 .sec-two {
@@ -140,6 +174,12 @@ li:before {
   text-align: center;
 }
 
+@media only screen and (max-width: 825px) {
+  .sec-two .sec-two-top p {
+    width: 65%;
+  }
+}
+
 .sec-two .line {
   width: 100%;
   height: 1px;
@@ -156,6 +196,14 @@ li:before {
           align-items: center;
   justify-items: center;
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 825px) {
+  .sec-two .logos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
 }
 
 .mini-header {
@@ -184,6 +232,13 @@ li:before {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 825px) {
+  .sec-three-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .sec-three-content .sec-three-txt {
   margin-bottom: 2rem;
 }
@@ -194,6 +249,19 @@ li:before {
 
 .sec-three-content button {
   width: 75%;
+}
+
+.sec-three-content .sec-three-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .shown-image {
@@ -266,6 +334,14 @@ li:before {
   margin-top: 3rem;
 }
 
+@media only screen and (max-width: 825px) {
+  .sec-four-points {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
 .sec-four-points .point {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,5 +357,53 @@ li:before {
 
 .sec-four-points .point-title {
   font-weight: 700;
+}
+
+@media only screen and (max-width: 825px) {
+  .sec-four-img {
+    width: 80%;
+  }
+}
+
+.sec-five {
+  background: url("../images/bg-bokeh.png");
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.sec-five h2 {
+  margin-bottom: 3rem;
+}
+
+.sec-five .sec-five-steps {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 825px) {
+  .sec-five .sec-five-steps {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+.sec-five .step {
+  font-weight: 700;
+}
+
+.sec-five button {
+  width: 30%;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 825px) {
+  .sec-five button {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

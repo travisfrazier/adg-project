@@ -1,0 +1,28 @@
+.sec-five {
+	background: url('../images/bg-bokeh.png');
+	background-size: cover;
+	background-position: bottom;
+	text-align: center;
+	padding: 3rem 0;
+	h2 {
+		margin-bottom: 3rem;
+	}
+	.sec-five-steps {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		@media only screen and (max-width: 825px) {
+			grid-template-columns: 1fr;
+			grid-gap: 1rem;
+		}
+	}
+	.step {
+		font-weight: $bold;
+	}
+	button {
+		width: 30%;
+		margin-top: 2rem;
+		@media only screen and (max-width: 825px) {
+			width: 80%;
+		}
+	}
+}

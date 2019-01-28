@@ -43,11 +43,16 @@ h2,
 h3,
 h4 {
 	font-size: $xlarge;
+	@media only screen and (max-width: 825px) {
+		font-size: $large;
+	}
 }
 
 .wrapper {
 	max-width: 1080px;
 	margin: 0 auto;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 button {
@@ -96,3 +101,4 @@ li:before {
 @import 'partials/_section-two';
 @import 'partials/_section-three';
 @import 'partials/_section-four';
+@import 'partials/_section-five';
