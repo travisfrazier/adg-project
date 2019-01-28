@@ -1,0 +1,29 @@
+.sec-one {
+	background: url('../images/bg-gold.png');
+	background-size: cover;
+	background-position: center;
+	padding: 2rem 0 3rem 0;
+	h1,
+	p {
+		text-align: center;
+	}
+	p {
+		font-size: $medium;
+		margin-bottom: 2.5rem;
+		margin-top: 0.25rem;
+	}
+	.sec-one-content {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 3rem;
+		justify-items: center;
+		div {
+			justify-self: start;
+			align-self: center;
+		}
+		iframe {
+			justify-self: end;
+		}
+	}
+}

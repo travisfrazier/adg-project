@@ -23,6 +23,40 @@ h4 {
   max-width: 1080px;
 }
 
+button {
+  color: #ffffff;
+  font-size: 1.25rem;
+  width: 100%;
+  padding: 1rem 4rem;
+  background: #17bebb;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+li:before {
+  content: '';
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  background-image: url("../images/bullet.png");
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+}
+
 .header {
   text-align: center;
   border-top: 3px solid #f6bd60;
@@ -34,25 +68,25 @@ h4 {
   width: 10rem;
 }
 
-.section-one {
+.sec-one {
   background: url("../images/bg-gold.png");
   background-size: cover;
   background-position: center;
   padding: 2rem 0 3rem 0;
 }
 
-.section-one h1,
-.section-one p {
+.sec-one h1,
+.sec-one p {
   text-align: center;
 }
 
-.section-one p {
+.sec-one p {
   font-size: 1.25rem;
   margin-bottom: 2.5rem;
   margin-top: 0.25rem;
 }
 
-.section-one .section-one-content {
+.sec-one .sec-one-content {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -62,7 +96,7 @@ h4 {
   justify-items: center;
 }
 
-.section-one .section-one-content div {
+.sec-one .sec-one-content div {
   -ms-grid-column-align: start;
       justify-self: start;
   -ms-flex-item-align: center;
@@ -70,42 +104,137 @@ h4 {
       align-self: center;
 }
 
-.section-one .section-one-content iframe {
+.sec-one .sec-one-content iframe {
   -ms-grid-column-align: end;
       justify-self: end;
 }
 
-.section-one ul {
-  list-style-type: none;
+.sec-two {
+  background: #ffffea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0 2rem 0;
 }
 
-.section-one ul li {
-  padding-bottom: 2rem;
+.sec-two .sec-two-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.section-one ul li:before {
-  content: '';
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-  background-size: cover;
-  background-image: url("../images/bullet.png");
-  background-repeat: no-repeat;
-  margin-right: 1rem;
-}
-
-.section-one button {
-  color: #ffffff;
-  font-size: 1.25rem;
   width: 100%;
-  padding: 1rem 4rem;
-  background: #17bebb;
-  border-radius: 10px;
+}
+
+.sec-two .sec-two-top p {
+  width: 30%;
+  text-align: center;
+}
+
+.sec-two .line {
+  width: 100%;
+  height: 1px;
+  background: #666666;
+}
+
+.sec-two .logos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.mini-header {
+  background: #93b7be;
+  color: #ffffff;
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+}
+
+.mini-header h2 {
+  font-weight: 300;
+}
+
+.sec-three {
+  background: url("../images/bg-abstract.png");
+  padding: 2rem 0 3rem 0;
+}
+
+.sec-three-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.sec-three-content .sec-three-txt {
+  margin-bottom: 2rem;
+}
+
+.sec-three-content .sec-three-txt-two {
+  margin-bottom: 1rem;
+}
+
+.sec-three-content button {
+  width: 75%;
+}
+
+.shown-image {
+  background-image: url("../images/img-large.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.images figure {
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.images figure img {
+  width: 100%;
+  padding: none;
+}
+
+.mini-header-two {
+  padding: 2rem 0;
+  color: #ffffff;
+  text-align: center;
+  background: url("../images/bg-leaves.png");
+}
+
+.mini-header-two h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.mini-header-two p {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
