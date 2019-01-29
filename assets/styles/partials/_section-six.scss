@@ -1,0 +1,44 @@
+.sec-six {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	padding: 3rem;
+	grid-gap: 2rem;
+	h2 {
+		color: $color-five;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+}
+
+.star-rating {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 1rem;
+	figcaption {
+		font-size: $small;
+		font-weight: $bold;
+	}
+}
+
+.review {
+	display: flex;
+	align-items: center;
+	p {
+		font-weight: $bold;
+	}
+}
+
+.review-text {
+	margin-left: 10.4rem;
+}
+
+.review-text-reverse {
+	text-align: right;
+}
+
+.review-reverse {
+	display: flex;
+	justify-content: flex-end;
+}
