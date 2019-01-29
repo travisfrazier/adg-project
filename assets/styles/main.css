@@ -42,6 +42,9 @@ button {
   padding: 1rem 4rem;
   background: #17bebb;
   border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 2px 2px #646464;
+          box-shadow: 2px 2px #646464;
 }
 
 ul {
@@ -265,7 +268,7 @@ li:before {
 }
 
 .shown-image {
-  background-image: url("../images/img-large.png");
+  background-image: url("../images/img.jpg");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -470,5 +473,153 @@ li:before {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.sec-seven {
+  background: #ffffea;
+  padding: 3rem 0 1rem 0;
+  text-align: center;
+}
+
+.sec-seven h2 {
+  margin-bottom: 0.5rem;
+}
+
+.sec-seven span {
+  margin-bottom: 0.5rem;
+}
+
+.sec-seven h5 {
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.sec-seven .products {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 825px) {
+  .sec-seven .products {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.sec-seven .products .product {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 475px;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-box-shadow: 2px 2px #646464;
+          box-shadow: 2px 2px #646464;
+  position: relative;
+}
+
+@media only screen and (max-width: 825px) {
+  .sec-seven .products .product {
+    width: 75%;
+  }
+}
+
+.sec-seven .products .product button {
+  position: absolute;
+  bottom: 1rem;
+  width: 85%;
+}
+
+.sec-seven .products .product .price {
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+}
+
+.badges {
+  border-top: 1px solid #646464;
+  padding: 1rem 0;
+}
+
+@media only screen and (max-width: 825px) {
+  .badges img {
+    width: 90%;
+  }
+}
+
+.badges p {
+  font-weight: 700;
+}
+
+.selected {
+  background: #cdf6e6 !important;
+  border: 2px solid green;
+}
+
+.mini-header-three {
+  text-align: center;
+  padding: 2rem 0;
+  background: #93b7be;
+  -webkit-box-shadow: inset 0px 5px 10px 1px #646464;
+          box-shadow: inset 0px 5px 10px 1px #646464;
+}
+
+.mini-header-three span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.mini-header-three .faq {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+footer {
+  background: #333333;
+  color: #ffffff;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b4b4b4;
+}
+
+footer img {
+  padding: 1rem 0;
+}
+
+footer .footer-links span {
+  padding: 0 1rem;
+}
+
+footer span,
+footer p {
+  font-weight: 300;
+}
+
+footer .copy {
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=main.css.map */

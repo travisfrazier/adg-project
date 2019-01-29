@@ -1,0 +1,24 @@
+footer {
+	background: $color-seven;
+	color: $color-font-one;
+	padding: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #b4b4b4;
+	img {
+		padding: 1rem 0;
+	}
+	.footer-links {
+		span {
+			padding: 0 1rem;
+		}
+	}
+	span,
+	p {
+		font-weight: $light;
+	}
+	.copy {
+		font-size: $small;
+	}
+}

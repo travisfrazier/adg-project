@@ -5,9 +5,14 @@ $color-two: #ffffea;
 $color-three: #f6bd60;
 $color-four: #93b7be;
 $color-five: #30698c;
+$color-six: #ffffea;
+$color-seven: #333333;
+
+$color-shadow: #646464;
 
 $color-font-one: #ffffff;
 $color-font-two: #000000;
+$color-font-three: #333333;
 
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
@@ -63,6 +68,8 @@ button {
 	padding: 1rem 4rem;
 	background: $color-one;
 	border-radius: 10px;
+	border: none;
+	box-shadow: 2px 2px $color-shadow;
 }
 
 ul {
@@ -104,3 +111,5 @@ li:before {
 @import 'partials/_section-four';
 @import 'partials/_section-five';
 @import 'partials/_section-six';
+@import 'partials/_section-seven';
+@import 'partials/_footer';
