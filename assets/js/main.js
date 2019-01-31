@@ -14,8 +14,11 @@ allProducts.forEach(function(product) {
 	product.addEventListener('click', function(event) {
 		event.preventDefault();
 
-		if (event.target.tagName === 'BUTTON') {
-			product.classList.toggle('selected');
+		if (event.target.tagName == 'BUTTON') {
+			this.classList.toggle('selected');
+			for (let sibling of this.parentNode.children) {
+				if (sibling !== this) sibling.classList.remove('selected');
+			}
 		}
 	});
 });

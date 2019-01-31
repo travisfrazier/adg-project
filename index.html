@@ -236,24 +236,24 @@
 						<span>1 - Elit 1</span>
 						<h5>Commodo</h5>
 						<img src="assets/images/single-img.png" />
-						<p class="price">Nulla $55.55 CAD</p>
-						<button>CLICK IT</button>
+						<p class="price">Nulla $55 CAD</p>
+						<button class="item-button" id="buttonOne">ADD TO CART</button>
 					</div>
 					<div class="product">
 						<span>5 - Elit 4</span>
 						<h5>Mod Tempor</h5>
 						<img src="assets/images/set-img.png" />
 						<p>Excepteur 1, Duis 1</p>
-						<p class="price">$220.50 CAD</p>
-						<button>CLICK IT</button>
+						<p class="price">$220 CAD</p>
+						<button class="item-button" id="buttonTwo">ADD TO CART</button>
 					</div>
 					<div class="product">
 						<span>8 - Elit 8</span>
 						<h5>Cillum Dolore</h5>
 						<img src="assets/images/pack-img.png" />
 						<p>Excepteur 2, Duis 1</p>
-						<p class="price">$220.50 CAD</p>
-						<button>CLICK IT</button>
+						<p class="price">$220 CAD</p>
+						<button class="item-button" id="buttonThree">ADD TO CART</button>
 					</div>
 				</div>
 				<div class="badges">
@@ -279,6 +279,42 @@
 				Copyright &copy; 2019 BubblyBelle. All Rights Reserved.
 			</p>
 		</footer>
+
+		<!-- Shopping Cart -->
+		<section class="sec shopping-cart wrapper">
+			<h4>Complete Your Order</h4>
+			<div class="shopping-cart-content wrapper">
+				<form class="shipping-form">
+					<legend>
+						<img src="./assets/images/shipping-icon.png" />Shipping Information
+					</legend>
+					<input type="email" name="email" placeholder="Email" required />
+					<input
+						type="text"
+						name="first_name"
+						placeholder="First Name"
+						required
+					/>
+					<input
+						type="text"
+						name="last_name"
+						placeholder="Last Name"
+						required
+					/>
+					<input type="address" name="address" placeholder="Address" required />
+					<input type="text" name="country" placeholder="Country" required />
+					<input type="number" name="zipcode" placeholder="Zip Code" required />
+					<button id="submit" type="submit" action="">SUBMIT</button>
+				</form>
+				<div class="cart-container">
+					<div class="cart"></div>
+					<p class="shipping"></p>
+					<p class="sub-total"></p>
+					<p class="total"></p>
+				</div>
+			</div>
+		</section>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/cart.js"></script>
 	</body>
 </html>
