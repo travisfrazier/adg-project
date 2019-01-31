@@ -1,16 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
-	ready();
-});
-
-//Shopping Cart Object
+//Shopping Cart Array Storage
 const shoppingCart = [
 	{
 		shipping: 19.99,
+		subTotal: 0,
+		calcTotal: function() {
+			this.total = this.shipping + this.subTotal;
+		},
 		total: 0
 	}
 ];
 
-// Products Object
+// Individual Products Object
 const products = {
 	productOne: {
 		name: 'Face Oil',
@@ -29,34 +29,37 @@ const products = {
 	}
 };
 
-function ready() {
-	const itemButtons = document.querySelectorAll('.item-button');
-	for (let i = 0; i < itemButtons.length; i++) {
-		let button = itemButtons[i];
-		button.addEventListener('click', function() {
-			let buttonClicked = event.target;
-			const itemButtons = document.querySelectorAll('.item-button');
-			let itemValue = 0;
+//Event Listener for All Product Buttons - Calls other functions when a button is pressed
+const itemButtons = document.querySelectorAll('.item-button');
+for (let i = 0; i < itemButtons.length; i++) {
+	let button = itemButtons[i];
+	button.addEventListener('click', function() {
+		let buttonClicked = event.target;
 
-			showShipping();
+		let itemValue = 0;
 
-			if (buttonClicked === itemButtons[0]) {
-				shoppingCart.push(products.productOne);
-				itemValue = products.productOne.price;
-			} else if (buttonClicked === itemButtons[1]) {
-				shoppingCart.push(products.productTwo);
-				itemValue = products.productTwo.price;
-			} else if (buttonClicked === itemButtons[2]) {
-				shoppingCart.push(products.productThree);
-				itemValue = products.productThree.price;
-			}
-			addItemToCart();
-			addToTotal(itemValue);
-			showFullTotal();
-		});
-	}
+		//Calls function to display shipping
+		showShipping();
+
+		if (buttonClicked === itemButtons[0]) {
+			shoppingCart.push(products.productOne);
+			itemValue = products.productOne.price;
+		} else if (buttonClicked === itemButtons[1]) {
+			shoppingCart.push(products.productTwo);
+			itemValue = products.productTwo.price;
+		} else if (buttonClicked === itemButtons[2]) {
+			shoppingCart.push(products.productThree);
+			itemValue = products.productThree.price;
+		}
+
+		//Calls shopping cart function on button click
+		addItemToCart();
+		addToSubTotal(itemValue);
+		showFullTotal();
+	});
 }
 
+//Adds item clicked to the shopping cart
 function addItemToCart() {
 	let newItem = document.createElement('div');
 	newItem.className = 'item';
@@ -70,21 +73,24 @@ function addItemToCart() {
 	}
 }
 
-function addToTotal(itemValue) {
-	shoppingCart[0].total = shoppingCart[0].total + itemValue;
+//Updates subtotal in shopping cart object and displays subtotal on page
+function addToSubTotal(itemValue) {
+	shoppingCart[0].subTotal = shoppingCart[0].subTotal + itemValue;
 	document.querySelector('.sub-total').innerHTML = `Sub-Total: ${
-		shoppingCart[0].total
+		shoppingCart[0].subTotal
 	}.00`;
 }
 
+//Displays the shipping total on the page
 function showShipping() {
 	const shipping = document.querySelector('.shipping');
 	shipping.style.display = 'block';
 	shipping.innerHTML = `Shipping: $${shoppingCart[0].shipping}`;
 }
 
+//Displays full total to page = subtotal + shipping and calls the object method to calc
 function showFullTotal() {
+	shoppingCart[0].calcTotal();
 	const fullTotal = document.querySelector('.total');
-	fullTotal.innerHTML = `Total: <strong>$${shoppingCart[0].total +
-		shoppingCart[0].shipping}</strong>`;
+	fullTotal.innerHTML = `Total: <strong>$${shoppingCart[0].total}</strong>`;
 }

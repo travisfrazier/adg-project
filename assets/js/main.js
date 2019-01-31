@@ -1,4 +1,4 @@
-// Photo Selection Function
+// Photo Selection and Carousel Function
 document.querySelector('.images').addEventListener('click', function(event) {
 	event.preventDefault();
 
@@ -7,7 +7,7 @@ document.querySelector('.images').addEventListener('click', function(event) {
 	console.log(event.target);
 });
 
-// Item Selection Function
+// Item Selection Highlight Function
 const allProducts = document.querySelectorAll('.product');
 
 allProducts.forEach(function(product) {
